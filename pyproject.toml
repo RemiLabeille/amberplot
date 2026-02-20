@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amberplot"
+version = "0.1.0"
+description = "AMBER MD trajectory analysis and plotting tools"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Remi Labeille"}]
+license = {text = "MIT"}
+keywords = ["AMBER", "MD", "molecular dynamics", "trajectory", "analysis"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "netCDF4>=1.6",
+    "mdtraj>=1.9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/RemiLabeille/amberplot"
+Repository = "https://github.com/RemiLabeille/amberplot.git"
